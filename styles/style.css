@@ -26,10 +26,18 @@ body{
     box-shadow: 0px 0px 10px hsl(209, 45%, 90%);
 }
 
-#drawers{
-  width: 300px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+.img-container{
+    width: 140%;
+    justify-self: stretch;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.crop{
+    position: absolute;
+    width: 100%;
 }
 
 #content > p {
@@ -56,18 +64,14 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 #profile{
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-.container{
-    display: flex;
-    padding-left: 40px;
-    padding-top: 20px;
 }
 
 .share{
@@ -105,3 +109,32 @@ body{
     justify-content: flex-end;
 }
 
+@media (max-width: 375px){
+    .box{
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #drawers{
+        width: auto;
+        height: 250px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      #content > p {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 5px;
+      }
+
+      .header{
+          font-size: 15.5px;
+      }
+
+      .description{
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+}
