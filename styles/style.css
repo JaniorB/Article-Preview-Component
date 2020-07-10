@@ -16,6 +16,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 65vw;
+    max-width: 800px;
     height: 300px;
     position: absolute;
     top: 50%;
@@ -110,7 +111,7 @@ body{
     justify-content: flex-end;
 }
 
-@media (max-width: 375px){
+@media (max-width: 500px){
     .box{
         flex-direction: column;
         justify-content: flex-start;
