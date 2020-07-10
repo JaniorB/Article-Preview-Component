@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;700&display=swap');
 
-<!-- font-family: 'Manrope', sans-serif; -->
+/* font-family: 'Manrope', sans-serif; */
 
 *{
     padding: 0;
@@ -53,11 +53,26 @@ body{
     padding-top: 10px;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
 #profile{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container{
+    display: flex;
     padding-left: 40px;
     padding-top: 20px;
+}
+
+.share{
+    padding-right: 50px;
+    padding-top: 40px;
 }
 
 .profile-pic{
@@ -90,7 +105,3 @@ body{
     justify-content: flex-end;
 }
 
-.share{
-    justify-self: flex-end;
-    background: red;
-}
